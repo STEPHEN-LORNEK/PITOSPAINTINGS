@@ -1,191 +1,51 @@
-<!DOCTYPE html>
-<html lang="it">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        /* Schermata di caricamento */
-        #loader {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: white;
-            z-index: 99;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .dots {
-            display: flex;
-        }
-
-        .dots div {
-            width: 15px;
-            height: 15px;
-            margin: 0 5px;
-            background-color: #4CAF50;
-            border-radius: 50%;
-            animation: blink 1s infinite;
-        }
-
-        .dots div:nth-child(1) {
-            animation-delay: 0s;
-        }
-
-        .dots div:nth-child(2) {
-            animation-delay: 0.2s;
-        }
-
-        .dots div:nth-child(3) {
-            animation-delay: 0.4s;
-        }
-
-        .dots div:nth-child(4) {
-            animation-delay: 0.6s;
-        }
-
-        @keyframes blink {
-            0%, 80%, 100% {
-                opacity: 0;
-            }
-            40% {
-                opacity: 1;
-            }
-        }
-
-        /* Contenuto della pagina */
-        .header {
-            text-align: center;
-            padding: 50px;
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        .header h1 {
-            margin: 0;
-            font-size: 3em;
-        }
-
-        .header h2 {
-            margin: 10px 0 0;
-            font-size: 1.5em;
-            font-weight: 300;
-        }
-
-        .navbar {
-            overflow: hidden;
-            background-color: #333;
-        }
-
-        .navbar a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        .navbar a:hover, .dropdown:hover .dropbtn {
-            background-color: #ddd;
-            color: black;
-        }
-
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-
-        .dropdown .dropbtn {
-            font-size: 16px;
-            border: none;
-            outline: none;
-            color: white;
-            padding: 14px 16px;
-            background-color: inherit;
-            font-family: inherit;
-            margin: 0;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            float: none;
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-    </style>
+    <title>Pitospaintings</title>
+    <link rel="stylesheet" href="css/modern-normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
-<body onload="hideLoader()">
 
-<div id="loader">
-    <div class="dots">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+
+
+<body class="home">
+
+<!-- TITOLO -->    
+<h1>Pito</h1>
+
+<!-- Menù HOME, tutto negli angoli SU DEKSTOP, allineato al centro SU MOBILE -->
+<nav>
+    <ul class="menuhome">
+        <li> 
+            <a href="opere/">opere</a>
+        </li>
+        <li>
+            <a href="about_me.html">about me</a>
+        </li>
+        <li>
+            <a href="contatti.html">contatti</a>
+        </li>
+    </ul>
+</nav>
+
+<!-- IMMAGINE -->
+<div class="video">
+    
+    <!-- PER USARE IMMAGINI DIVERSE SU MOBILE E DEKSTOP / capire se serve
+    <picture>
+        <source media="(min-width:1024px)" srcset="">
+        <img src="immagini/prova169.jpg" alt="">
+    </picture>
+    -->
+
+    <!-- immagine di prova, mettere video o immagine altra -->
+    <img src="immagini/prova169.jpg" alt="testo alternativo">
 </div>
 
-<div class="header">
-    <h1>Benvenuti nella nostra Home Page</h1>
-    <h2>Il nostro sottotitolo accattivante</h2>
-</div>
-
-<div class="navbar">
-    <a href="#home">Home</a>
-    <a href="#about">Chi siamo</a>
-    <a href="#services">Servizi</a>
-    <div class="dropdown">
-        <button class="dropbtn">Menu 
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-            <a href="#link1">Link 1</a>
-            <a href="#link2">Link 2</a>
-            <a href="#link3">Link 3</a>
-        </div>
-    </div> 
-    <a href="#contact">Contatti</a>
-</div>
-
-<script>
-    function hideLoader() {
-        document.getElementById('loader').style.display = 'none';
-    }
-
-    // Simulate loading time for demo purposes
-    setTimeout(hideLoader, 3000);
-</script>
 
 </body>
+
 </html>

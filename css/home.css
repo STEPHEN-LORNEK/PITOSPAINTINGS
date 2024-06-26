@@ -1,0 +1,94 @@
+
+.home {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.home nav {
+    order: 2;
+}
+
+.home h1 {
+    margin: auto 0;
+}
+
+.menuhome {
+    font-size: 3rem;
+    font-weight: 700;
+    list-style: none;
+    padding: 0rem;
+    margin-bottom: 4.5rem;
+    gap: 7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.video {
+    border-radius: 3rem;
+    overflow: hidden;
+    margin-bottom: 7rem;
+}
+
+@media (min-width:1024px) {
+
+    h1 {
+        position: fixed;
+        top: 2.5rem;
+        left: 2.5rem;
+    }
+
+    .home {
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        position: absolute;
+    }
+
+    .video {
+        margin-bottom: 0;
+    }
+
+
+    li {
+        transition: all 300ms;
+    }
+
+
+    li:first-child {
+        position: fixed;
+        top: 2.5rem;
+        right: 2.5rem;
+    }
+
+    li:first-child:hover {
+        transform: rotate(-30deg);
+    }
+
+    li:nth-child(2) {
+        position: fixed;
+        bottom: 2.5rem;
+        left: 2.5rem;
+    }
+
+    li:nth-child(2):hover {
+        transform: rotate(-30deg);
+    }
+
+
+    li:nth-child(3) {
+        position: fixed;
+        bottom: 2.5rem;
+        right: 2.5rem;
+    }
+    
+    li:nth-child(3):hover {
+        transform: rotate(30deg);
+    }
+    
+}
