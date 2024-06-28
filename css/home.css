@@ -31,14 +31,15 @@
     border-radius: 3rem;
     overflow: hidden;
     margin-bottom: 7rem;
+    max-width: 100rem;
 }
 
 @media (min-width:1024px) {
 
     h1 {
         position: fixed;
-        top: 2.5rem;
-        left: 2.5rem;
+        top: 3rem;
+        left: 3rem;
     }
 
     .home {
@@ -62,8 +63,8 @@
 
     li:first-child {
         position: fixed;
-        top: 2.5rem;
-        right: 2.5rem;
+        top: 3rem;
+        right: 3rem;
     }
 
     li:first-child:hover {
@@ -72,8 +73,8 @@
 
     li:nth-child(2) {
         position: fixed;
-        bottom: 2.5rem;
-        left: 2.5rem;
+        bottom: 3rem;
+        left: 3rem;
     }
 
     li:nth-child(2):hover {
@@ -83,8 +84,8 @@
 
     li:nth-child(3) {
         position: fixed;
-        bottom: 2.5rem;
-        right: 2.5rem;
+        bottom: 3rem;
+        right: 3rem;
     }
     
     li:nth-child(3):hover {
